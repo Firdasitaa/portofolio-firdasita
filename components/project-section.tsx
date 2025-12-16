@@ -15,19 +15,19 @@ const projects = [
   {
     title: "Aplikasi Web CRUD Sederhana - Pemesanan Kamar Hotel",
     description: "Aplikasi web CRUD (Create, Read, Update, Delete) yang memungkinkan pengguna atau admin mengelola data pemesanan kamar hotel secara digital. Teknologi yang Digunakan : HTML, CSS, PHP, MySQL, XAMPP",
-    image: "/projects/project2.jpg", 
+    image: "/projects/project2.png", 
     link: "https://github.com/Firdasitaa/Pemesanan-Kamar",
   },
   {
-    title: "Portofolio Web",
-    description: "Mobile application for tracking fitness activities with data visualization and progress monitoring.",
-    image: "/projects/project3.jpg", 
-    link: "https://github.com",
+    title: "Web Portofolio",
+    description: "Website portofolio pribadi yang menampilkan profil, proyek, dan keahlian sebagai media personal branding.",
+    image: "/projects/project3.png", 
+    link: "https://github.com/Firdasitaa/portofolio-firdasita",
   },
   {
-    title: "Task Management System",
+    title: "QR Code - Testing",
     description: "Collaborative task management platform with real-time updates and team collaboration features.",
-    image: "/projects/project4.jpg", // Ganti dengan path gambar project Anda
+    image: "/projects/project4.png",
     link: "https://github.com",
   },
 ]
