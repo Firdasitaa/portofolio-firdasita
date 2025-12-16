@@ -85,9 +85,9 @@ export function HeroSection() {
                                 animate={{ opacity: 1 }}
                                 transition={{ duration: 0.6, delay: 0.6 }}
                             >
-                                Mahasiswa Sistem Informasi yang tertarik pada pengembangan sistem berbasis teknologi 
-                                informasi untuk mendukung kebutuhan bisnis dan organisasi. Memiliki pengalaman dalam 
-                                analisis kebutuhan sistem, perancangan database, serta pengembangan aplikasi berbasis web.
+                                Mahasiswa Sistem Informasi dengan minat pada pengembangan sistem berbasis teknologi informasi. 
+                                Memiliki pengalaman dalam analisis kebutuhan sistem, perancangan database, serta pengembangan 
+                                aplikasi web dan UI/UX.
                             </motion.p>
                         </div>
                     </div>

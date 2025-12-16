@@ -3,7 +3,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { motion } from "framer-motion"
-import { Github } from "lucide-react"
+import { Github, Figma } from "lucide-react"
 
 const projects = [
   {
@@ -11,24 +11,28 @@ const projects = [
     description: "Merancang antarmuka pengguna untuk aplikasi pemesanan kamar hotel, mulai dari halaman depan hingga logout.",
     image: "/projects/project1.png", 
     link: "https://www.figma.com/proto/RHzYA0pXjSQuZxmQ8H8HEC/UI-UX-PERHOTELAN?node-id=8-3&t=bk8n4u5DLVJqKF4K-1",
+    icon: "figma",
   },
   {
     title: "Aplikasi Web CRUD Sederhana - Pemesanan Kamar Hotel",
     description: "Aplikasi web CRUD (Create, Read, Update, Delete) yang memungkinkan pengguna atau admin mengelola data pemesanan kamar hotel secara digital. Teknologi yang Digunakan : HTML, CSS, PHP, MySQL, XAMPP",
     image: "/projects/project2.png", 
     link: "https://github.com/Firdasitaa/Pemesanan-Kamar",
+    icon: "github",
   },
   {
     title: "Web Portofolio",
     description: "Website portofolio pribadi yang menampilkan profil, proyek, dan keahlian sebagai media personal branding.",
     image: "/projects/project3.png", 
     link: "https://github.com/Firdasitaa/portofolio-firdasita",
+    icon: "github",
   },
   {
     title: "QR Code - Testing",
-    description: "Collaborative task management platform with real-time updates and team collaboration features.",
+    description: "Implementasi awal fitur QR Code reader pada aplikasi web untuk membaca dan menampilkan isi QR Code sebagai dasar pengembangan fitur lanjutan.",
     image: "/projects/project4.png",
-    link: "https://github.com",
+    link: "https://github.com/Firdasitaa/qrcode-testing",
+    icon: "github",
   },
 ]
 
@@ -56,7 +60,7 @@ export function ProjectSection() {
             transition={{ delay: index * 0.15, duration: 0.5 }}
             whileHover={{ y: -8, transition: { duration: 0.3 } }}
           >
-            <Card className="h-full bg-gradient-to-b from-card/50 to-card border-2 border-primary/20 shadow-lg hover:shadow-2xl hover:shadow-primary/20 transition-all backdrop-blur-sm group overflow-hidden">
+            <Card className="h-full bg-gradient-to-b from-card/50 to-card border-2 border-primary/20 shadow-lg hover:shadow-2xl hover:shadow-primary/20 transition-all backdrop-blur-sm group overflow-hidden flex flex-col">
               {/* Project Image */}
               <div className="relative w-full h-48 overflow-hidden bg-gradient-to-br from-primary/10 to-accent/10">
                 <motion.img
@@ -77,8 +81,8 @@ export function ProjectSection() {
                 </CardTitle>
               </CardHeader>
 
-              <CardContent className="space-y-6">
-                <CardDescription className="text-sm text-muted-foreground leading-relaxed min-h-[60px]">
+              <CardContent className="flex-1 flex flex-col justify-between">
+                <CardDescription className="text-sm text-muted-foreground leading-relaxed mb-6">
                   {project.description}
                 </CardDescription>
 
@@ -89,7 +93,11 @@ export function ProjectSection() {
                     asChild
                   >
                     <a href={project.link} target="_blank" rel="noopener noreferrer">
-                      <Github className="w-4 h-4 mr-2 group-hover/btn:rotate-12 transition-transform" />
+                      {project.icon === "figma" ? (
+                        <Figma className="w-4 h-4 mr-2 group-hover/btn:rotate-12 transition-transform" />
+                      ) : (
+                        <Github className="w-4 h-4 mr-2 group-hover/btn:rotate-12 transition-transform" />
+                      )}
                       Link Project
                     </a>
                   </Button>

@@ -23,28 +23,24 @@ const experiences = [
     organization: "Organisasi Kepemudaan Sinar Muda, Karanggede Prambanan",
     period: "2022 - Sekarang",
     description: [
-      "Mengelola administrasi surat menyurat dan notulensi rapat secara rutin",
+      "Mengelola administrasi surat menyurat dan notulensi rapat secara rutin.",
       "Mencatat dan mengarsipkan dokumen kegiatan serta mendukung koordinasi internal organisasi.",
       "Terlibat aktif dalam kegiatan sosial dan budaya seperti senam bersama dan pentas seni HUT RI ke-79."
     ],
     icon: Briefcase,
-    color: "bg-blue-500",
-  },
-  {
-    title: "Koordinator Acara",
-    organization: "UKM Seni & Budaya",
-    period: "2023 - 2024",
-    description: "Mengkoordinasi pelaksanaan berbagai event seni dan budaya di kampus, mengelola tim panitia, dan memastikan acara berjalan dengan sukses",
-    icon: Users,
-    color: "bg-green-500",
-  },
-  {
-    title: "Anggota Komunitas",
-    organization: "Komunitas Pemuda Daerah",
-    period: "2022 - 2023",
-    description: "Aktif dalam kegiatan sosial kemasyarakatan, membantu program pengabdian masyarakat, dan berpartisipasi dalam kegiatan pengembangan daerah",
-    icon: Rocket,
     color: "bg-orange-500",
+  },
+  {
+    title: "Departemen Informasi & Pers",
+    organization: "UKM WAMIKA, Universitas Teknologi Digital Indonesia",
+    period: "2025 - Sekarang",
+     description: [
+      "Merencanakan, mengatur dan melaksanakan kegiatan yang berkaitan dengan informasi dan pers atas pertimbangan Wakil Ketua.",
+      "Mengevaluasi serta mengembangkan kegiatan informasi dan pers dalam departemen.",
+      "Melaporkan serta bertanggungjawab terhadap hal-hal yang berkaitan dengan bidang informasi dan pers kepada Wakil Ketua."
+    ],
+    icon: Briefcase,
+    color: "bg-green-500",
   },
 ]
 
@@ -163,7 +159,7 @@ export function ExperienceSection() {
                         </div>
                       </motion.div>
 
-                      {!selectedExp || selectedExp !== index ? (
+                      {selectedExp !== index && (
                         <motion.p
                           className="text-xs text-primary mt-2 font-medium"
                           initial={{ opacity: 0 }}
@@ -171,7 +167,7 @@ export function ExperienceSection() {
                         >
                           Klik untuk detail →
                         </motion.p>
-                      ) : null}
+                      )}
                     </CardContent>
                   </Card>
                 </motion.div>
