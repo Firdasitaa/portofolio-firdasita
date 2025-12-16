@@ -14,7 +14,7 @@ const certificates = [
     year: "2024",
     description: "Webinar yang membahas konsep dan penerapan sistem terdistribusi serta sistem terdesentralisasi dalam teknologi informasi. Materi meliputi blockchain, IPFS (InterPlanetary File System), NFT (Non-Fungible Token), serta implementasi automation testing framework dalam konteks enterprise.",
     image: "/certificates/webinar-sistem-terdistribusi-2024.png",
-    link: "#",
+    link: "/certificates/webinar-sistem-terdistribusi-2024.pdf",
     skills: [
       "Distributed Systems",
       "Decentralized Systems",
@@ -30,7 +30,7 @@ const certificates = [
     year: "2024",
     description: "Seminar yang membahas isu keamanan siber di era digital, termasuk peluang dan tantangan dalam melindungi sistem informasi. Kegiatan ini bertujuan meningkatkan pemahaman peserta mengenai pentingnya keamanan data, risiko siber, serta peran keamanan informasi dalam lingkungan akademik dan organisasi.",
     image: "/certificates/keamanan-siber-2024.png",
-    link: "#",
+    link: "/certificates/keamanan-siber-2024.pdf",
     skills: [
       "Cyber Security",
       "Information Security",
@@ -105,17 +105,8 @@ export function AchievementsSection() {
               </CardHeader>
 
               <CardContent className="flex-1 flex flex-col justify-between">
-                {/* Top Section: Toggle and Collapsible Content */}
+                {/* Collapsible Description */}
                 <div>
-                  {/* Toggle Button */}
-                  <motion.button
-                    onClick={() => setSelectedCert(selectedCert === index ? null : index)}
-                    className="text-xs text-primary font-medium hover:underline transition-all block mb-3"
-                    whileHover={{ x: 5 }}
-                  >
-                    {selectedCert === index ? "Sembunyikan detail ↑" : "Lihat detail →"}
-                  </motion.button>
-                  
                   <motion.div
                     initial={false}
                     animate={{
@@ -145,9 +136,18 @@ export function AchievementsSection() {
                       ))}
                     </div>
                   </motion.div>
+
+                  {/* Toggle Button */}
+                  <motion.button
+                    onClick={() => setSelectedCert(selectedCert === index ? null : index)}
+                    className="text-xs text-primary font-medium hover:underline mb-4 transition-all"
+                    whileHover={{ x: 5 }}
+                  >
+                    {selectedCert === index ? "Sembunyikan detail ↑" : "Lihat detail →"}
+                  </motion.button>
                 </div>
 
-                {/* Bottom Section: Button - Always at bottom */}
+                {/* View Certificate Button */}
                 <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
                   <Button
                     variant="outline"

@@ -21,7 +21,9 @@ export function ContactSection() {
                 whileTap={{ scale: 0.95 }}
               >
                 <a
-                  href="tel:+6285726287647"
+                  href="https://wa.me/6285726287647"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="flex flex-col items-center text-center gap-3 p-4 rounded-lg bg-background/50 hover:bg-background transition-colors cursor-pointer block"
                 >
                   <motion.div
@@ -32,7 +34,7 @@ export function ContactSection() {
                     <Phone className="w-6 h-6 text-primary-foreground" />
                   </motion.div>
                   <div>
-                    <h3 className="font-bold text-foreground mb-1">Phone</h3>
+                    <h3 className="font-bold text-foreground mb-1">WhatsApp</h3>
                     <p className="text-sm text-muted-foreground">0857-2628-7647</p>
                   </div>
                 </a>
