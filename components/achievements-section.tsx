@@ -39,6 +39,36 @@ const certificates = [
       "IT Security Awareness"
     ],
   },
+  {
+    title: "Sertifikat Sekretaris UKM WAMIKA UTDI",
+    issuer: "UKM WAMIKA, Universitas Teknologi Digital Indonesia",
+    year: "2024",
+    description: "Sertifikat sebagai Sekretaris dalam kegiatan Latihan Kader & Rihlah bertema 'Keberkahan hidup datang dari ketakwaan' yang diselenggarakan UKM WAMIKA UTDI pada 7-8 Desember 2024. Kegiatan ini meliputi pelatihan kepemimpinan, pengembangan karakter islami, dan pembinaan kader organisasi.",
+    image: "/certificates/sekretaris-wamika-2024.png",
+    link: "/certificates/sekretaris-wamika-2024.pdf",
+    skills: [
+      "Leadership",
+      "Organization Management",
+      "Islamic Character Building",
+      "Team Coordination",
+      "Event Management"
+    ],
+  },
+  {
+    title: "Seminar Nasional: Pendidikan di Era AI",
+    issuer: "Himpunan Mahasiswa Sistem Informasi, Universitas Teknologi Digital Indonesia",
+    year: "2025",
+    description: "Sertifikat peserta Seminar Nasional dengan tema 'Pendidikan di Era AI: Dari Peluang Tranformasi hingga Tantangan Implementasi' yang diselenggarakan oleh Himpunan Mahasiswa Sistem Informasi di Universitas Teknologi Digital Indonesia pada tanggal 16 Maret 2025. Seminar ini membahas transformasi pendidikan dengan integrasi kecerdasan buatan dan tantangan implementasinya.",
+    image: "/certificates/seminar-nasional-ai-2025.png",
+    link: "/certificates/seminar-nasional-ai-2025.pdf",
+    skills: [
+      "Artificial Intelligence",
+      "Education Technology",
+      "Digital Transformation",
+      "AI Implementation",
+      "Future of Education"
+    ],
+  },
 ]
 
 export function AchievementsSection() {
